@@ -1,5 +1,10 @@
 # DSSCameraKit
 
+[![CI](https://github.com/Chrois27/DSSCameraKit/actions/workflows/ci.yml/badge.svg)](https://github.com/Chrois27/DSSCameraKit/actions/workflows/ci.yml)
+![Swift](https://img.shields.io/badge/Swift-5.9+-orange.svg)
+![Platforms](https://img.shields.io/badge/Platforms-iOS%2013+%20%7C%20macOS%2011+-blue.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 A dependency-free Swift client for controlling PTZ cameras through a
 token-authenticated VMS HTTP API (DSS/ICC-style `/brms/api/v1.0` endpoints).
 
