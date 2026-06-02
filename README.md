@@ -4,6 +4,7 @@
 ![Swift](https://img.shields.io/badge/Swift-5.9+-orange.svg)
 ![Platforms](https://img.shields.io/badge/Platforms-iOS%2013+%20%7C%20macOS%2011+-blue.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/Chrois27/DSSCameraKit?sort=semver)](https://github.com/Chrois27/DSSCameraKit/releases)
 
 A dependency-free Swift client for controlling PTZ cameras through a
 token-authenticated VMS HTTP API (DSS/ICC-style `/brms/api/v1.0` endpoints).
@@ -43,6 +44,18 @@ It handles the three things that make on-prem camera control fiddly:
   isn't penalised by the handshake.
 - **No retain cycles** — the keep-alive client invalidates its `URLSession` on `deinit`
   (a delegate-backed session retains its delegate).
+
+## Installation
+
+Swift Package Manager — add to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/Chrois27/DSSCameraKit.git", from: "1.0.0")
+]
+```
+
+Or in Xcode: **File ▸ Add Package Dependencies…** and paste the repository URL.
 
 ## Usage
 
